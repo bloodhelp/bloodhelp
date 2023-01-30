@@ -8,6 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="aa">#F62626</color>
+    <color name="Background">#F2E2E2</color>
+    <color name="Background_nav">#E82424</color>
+    <color name="background_text">#F09595</color>
 
     <color name="color_edittext_login">#FF1414</color>
 </resources>
