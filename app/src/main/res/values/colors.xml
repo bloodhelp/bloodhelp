@@ -11,6 +11,6 @@
     <color name="Background">#F2E2E2</color>
     <color name="Background_nav">#E82424</color>
     <color name="background_text">#F09595</color>
-
+    <color name="red">#EC2A2A</color>
     <color name="color_edittext_login">#FF1414</color>
 </resources>

@@ -2,41 +2,55 @@ package com.example.bloodhelp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
-import com.ismaeldivita.chipnavigation.ChipNavigationBar;
+import com.example.bloodhelp.databinding.ActivityMainBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 
 public class homme extends AppCompatActivity {
 
-    ChipNavigationBar chipNavigationBar;
+    ActivityMainBinding binding;
+
+BottomNavigationView bo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homme);
 
-        chipNavigationBar = findViewById(R.id.bottom_nav_bar);
-        chipNavigationBar.setItemSelected(R.id.Home,true);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                new homeFragment()).commit();
+        bo = findViewById(R.id.bottomNavigationview);
 
-        chipNavigationBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(int i) {
-                Fragment fragment = null;
-                switch (i){
-                    case R.id.Home:
-                        fragment = new homeFragment();
-                        break;
-                    case R.id.Historique:
-                        fragment = new historyFragment();
-                        break;
-                    case R.id.Profile:
-                        fragment = new profileFragment();
-                        break;
-                }
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,fragment).commit();
+        bo.setBackground(null);
+
+        bo.setOnItemSelectedListener(item -> {
+            switch (item.getItemId()){
+                case R.id.Home:
+                    replaceFragment(new HomeFragment());
+                    break;
+                case R.id.Request:
+                    replaceFragment(new RequestFragment());
+                    break;
+                case R.id.profile:
+                    replaceFragment(new ProfileFragment());
+                    break;
+                case R.id.Menu:
+                    replaceFragment(new menuFragment());
+                    break;
             }
+            return true;
         });
+
     }
+
+    private void replaceFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.framelayout, fragment);
+        fragmentTransaction.commit();
+    }
+
+
 }

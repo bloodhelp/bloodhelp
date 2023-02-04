@@ -2,31 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/Historique"
-        android:title="Historique"
-        android:icon="@drawable/ic_history"
-        app:cnb_backgroundColor="@color/background_text"
-        app:cnb_iconColor="#ffffff"
-        app:cnb_textColor="#ffffff"
-
-        />
 
     <item
         android:id="@+id/Home"
         android:title="Home"
         android:icon="@drawable/ic_home"
-        app:cnb_backgroundColor="@color/background_text"
-        app:cnb_iconColor="#ffffff"
-        app:cnb_textColor="#ffffff"
         />
-
     <item
-        android:id="@+id/Profile"
-        android:title="Profile"
-        android:icon="@drawable/ic_person"
-        app:cnb_backgroundColor="@color/background_text"
-        app:cnb_iconColor="#ffffff"
-        app:cnb_textColor="#ffffff"
+        android:id="@+id/Request"
+        android:title="Request"
+        android:icon="@drawable/ic_request"
+        />
+    <item
+        android:title=""
+        />
+    <item
+        android:id="@+id/profile"
+        android:title="profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        />
+    <item
+        android:id="@+id/Menu"
+        android:title="Menu"
+        android:icon="@drawable/ic_baseline_menu_24"
         />
 </menu>
