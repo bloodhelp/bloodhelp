@@ -3,16 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menuFragment">
+    tools:context=".fragementmenuactivity"
+    android:layout_margin="20dp">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Menu"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
         />
 
 </FrameLayout>

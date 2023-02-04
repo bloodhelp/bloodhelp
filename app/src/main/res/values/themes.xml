@@ -18,9 +18,15 @@
     </style>
     <style name="imgcercle" parent="">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">60dp</item>
+        <item name="cornerSize">67dp</item>
     </style>
     <style name="color_acceuill" parent="">
         <item name="colorPrimary">#EA9292</item>
+    </style>
+    <style name="color_arch_acti" parent="">
+        <item name="colorPrimary">#74BBDC</item>
+    </style>
+    <style name="rececletheme" parent="">
+        <item name="colorPrimary">#DFDFDF</item>
     </style>
 </resources>
