@@ -24,7 +24,7 @@ BottomNavigationView bo;
         bo = findViewById(R.id.bottomNavigationview);
 
         bo.setBackground(null);
-
+        getSupportActionBar().hide();
         bo.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
                 case R.id.Home:

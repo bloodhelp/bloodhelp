@@ -15,23 +15,23 @@
         android:id="@+id/framelayout"/>
 
     <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomNavBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bottomNavBar"
         android:layout_gravity="bottom"
         android:background="@color/white"
         app:fabCradleMargin="10dp"
-        app:fabCradleRoundedCornerRadius="50dp"
-        >
+        app:fabCradleRoundedCornerRadius="50dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/bottomNavigationview"
             android:layout_marginEnd="20dp"
-            app:labelVisibilityMode="labeled"
             android:background="@drawable/transparant_background"
-            app:menu="@menu/menu"/>
+            android:theme="@style/color_acceuill"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu" />
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

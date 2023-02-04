@@ -16,4 +16,11 @@
     <style name="color_login" parent="">
         <item name="colorPrimary">@color/color_edittext_login</item>
     </style>
+    <style name="imgcercle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">60dp</item>
+    </style>
+    <style name="color_acceuill" parent="">
+        <item name="colorPrimary">#EA9292</item>
+    </style>
 </resources>
